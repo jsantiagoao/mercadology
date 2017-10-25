@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-        $arreglo['string']="Santiago";
+        $arreglo['string']="Santiago Aguillon Olvera";
 		$this->load->view('welcome_message',$arreglo);
 	}
 }
