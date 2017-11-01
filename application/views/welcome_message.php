@@ -12,6 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	 Hola mundo <?php echo $string;?>
+	 <?= getnombre();?>
 </div>
 
 </body>
