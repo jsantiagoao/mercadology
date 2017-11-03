@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-class webservice extends CI_Controller {
+class Webservice extends CI_Controller {
 	function __contruct(){
 
 		parent::__contruct();
@@ -11,7 +11,7 @@ class webservice extends CI_Controller {
 	}
 	function index(){
 
- 		$this->load->helper('santiago');
+ 		$this->load->helper('Santiago');
         $arreglo['string']="Santiago Aguillon Olvera";
 		$this->load->view('welcome_message',$arreglo);
 	}
@@ -27,7 +27,7 @@ if($dato){
 	}
 	function userlogin(){
 		
-		$this->load->model('users_model');
+		$this->load->model('Users_model');
 	$mail=$this->input->post('mail');
 	$data['mail']=$mail;
 
